@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #FF7300; /* Bright Orange */
+  --color-primary-hover: #E66600;
+  --color-secondary: #1B2A47; /* Dark Navy Blue */
+  --color-background: #0B0F19; /* Very Dark Navy/Black for Premium Dark Mode */
+  --color-surface: #151E32; /* Slightly lighter background for cards/nav */
+  --color-surface-hover: #1E2B45;
+  --color-text: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  
+  --font-family: 'Inter', sans-serif;
+  
+  --transition-speed: 0.3s;
+  --border-radius: 12px;
+  --container-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition-speed) ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(255, 115, 0, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 6px 20px rgba(255, 115, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Small Button (for catalog) */
+.btn-small {
+  background-color: var(--color-surface-hover);
+  color: var(--color-primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all var(--transition-speed) ease;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-small:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
