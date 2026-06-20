@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Run | ร้านอุปกรณ์และเสื้อผ้าวิ่ง</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="Source/LOGO.jpg" alt="Nerd Run Logo" class="logo">
+            <span class="brand-name">NERD RUN</span>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-toggle" id="langToggle">
+                <span class="lang active" data-lang="th">TH</span>
+                <span class="divider">/</span>
+                <span class="lang" data-lang="en">EN</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">อุปกรณ์วิ่งของคน "คลั่ง" วิ่ง</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">พร้อมให้คุณทำลายสถิติใหม่ด้วยอุปกรณ์คุณภาพระดับโปร</p>
+            <a href="#catalog" class="cta-btn secondary" data-i18n="view_products">เลือกดูสินค้า</a>
+        </div>
+        <div class="hero-images">
+            <img src="Source/Sing-let.png" alt="Singlet" class="hero-img floating-1">
+            <img src="Source/T-Shirt.png" alt="T-Shirt" class="hero-img floating-2">
+        </div>
+    </section>
+
+    <!-- Product Catalog -->
+    <section id="catalog" class="catalog">
+        <h2 class="section-title" data-i18n="catalog_title">สินค้าแนะนำ</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="Source/Sing-let.png" alt="Nerd Run Singlet" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="product_singlet">เสื้อกล้ามวิ่ง Nerd Run Singlet</h3>
+                    <p class="product-price">฿590</p>
+                    <button class="add-to-cart-btn" data-i18n="add_to_cart">หยิบใส่ตะกร้า</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="Source/T-Shirt.png" alt="Nerd Run T-Shirt" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="product_tshirt">เสื้อยืดวิ่ง Nerd Run T-Shirt</h3>
+                    <p class="product-price">฿690</p>
+                    <button class="add-to-cart-btn" data-i18n="add_to_cart">หยิบใส่ตะกร้า</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="Source/sock.png" alt="Nerd Run Socks" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" data-i18n="product_socks">ถุงเท้าวิ่ง Nerd Run Socks</h3>
+                    <p class="product-price">฿190</p>
+                    <button class="add-to-cart-btn" data-i18n="add_to_cart">หยิบใส่ตะกร้า</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="footer-cta">
+        <div class="footer-content">
+            <h2 data-i18n="ready_to_run">พร้อมลุยไปกับเราหรือยัง?</h2>
+            <button class="primary-btn big-btn" data-i18n="buy_now">สั่งซื้อสินค้าเลย</button>
+            <div class="social-links">
+                <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="social-icon line"><i class="fab fa-line"></i> LINE OA</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load the generated base64 logo script to bypass Canvas CORS on local files -->
+    <script src="logo_b64.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
